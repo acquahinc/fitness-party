@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    color:white;
+}
+
+
+li{
+    list-style: none;
+    color: white;
+    
+}
+li a{
+    color: white;
+}
+
+.header{
+ 
+    display: flex;
+    gap: 20px;
+    flex-wrap:nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: black;
+
+}
+.header-bg{
+    background: linear-gradient(
+        rgba(134, 127, 127, 0.5), /* Gradient color and transparency */
+        rgba(8, 0, 0, 0.5) ), url('party-images/fitness7.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+
+}
+
+.first-body{
+    margin-top: 70px;
+    text-align: center;
+    font-size: 50px;
+    padding-top: 80px;
+    
+}
+.first-body p{
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 20px;
+    font-family: "Roboto", sans-serif;
+    color: black;
+  
+}
+.first-body h2{
+    padding: 10px;
+    animation-duration: 4s;
+    animation-name: slidein;
+    text-shadow: 1px 1px 1px black;
+    font-family: "EB Garamond", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;  
+   
+}
+
+.first-body h5{
+    padding: 10px;
+    animation-duration: 4s;
+    animation-name: slidein;
+    text-shadow: 1px 1px 1px black;  
+  
+}
+
+@keyframes slidein {
+    from {
+      translate: 150vw 0;
+      scale: 200% 1;
+    }
+  
+    to {
+      translate: 0 0;
+      scale: 100% 1;
+    }
+  }
+  .first-button{
+    display: block;
+    text-align: center;
+  }  
+  .button-fix{
+    font-size: 30px;
+    background-color: purple;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 30px;
+    transition: 2s;
+    cursor: pointer;
+    border-radius: 10px;
+    border-style: none;
+    font-family: "Matemasie", sans-serif; 
+  }
+
+  button:hover{
+    background-color:rgb(216, 33, 216);
+    color: black;
+  }
+
+      
+  @media (max-width: 320px)  {
+    .first-body p{
+      font-size: 10px;
+      color: red;
+    }
+    
+    .first-body h2{
+      font-size: 20px;
+      
+    }
+    .first-body h5{
+      font-size: 10px;
+    }
+  }
+ 
